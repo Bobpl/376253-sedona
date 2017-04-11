@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Mahram Gurbanzade](https://up.htmlacademy.ru/htmlcss/17/user/376253).
-* Наставник: [Александр Горбачев]
+* Наставник: [Александр Горбачев](https://htmlacademy.ru/profile/hrbchv).
 
 ---
 
