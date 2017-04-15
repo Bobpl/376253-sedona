@@ -2,11 +2,150 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <title>City of Sedona</title>
   </head>
   <body>
+    
+    <header class="main-header">
+        <div class="container">
+            <div class="main-logo">
+                <img src="http://placehold.it/150x100" alt="Logo"  width="150" height="100">
+            </div>
+            
+            <nav class="main-nav"> 
+                <ul>
+                    <li><a href="#">Информация</a></li>
+                    <li><a href="#">Фото и Видео</a></li>
+                    <li><a href="#">Карта Штата</a></li>
+                    <li><a href="#">Гостиницы</a></li>
+                </ul>
+            </nav>
+            
+            <div class="promo"> 
+                <h1> Welcome </h1>
+                <p> to the gorgeous </p>
+            
+                <h2> Седона — небольшой городок в Аризоне, заслуживающий большего! </h2>
+                <p> Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон! </p>
+            
+            </div>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
+        </div>
+    </header>
+    
+    <main>
+       <div class="container">
+            <div class="main-features">
+                <div class="features item1">
+                    <h2> Настоящий <br> городок </h2>
+                    <p class="dec-item"> №1 </p>
+                    <p>Седона - Не аттракцион для туристов, <br> там течет своя жизнь </p>
+                </div>
+
+                <div class="features-photo item2">
+                    <!-- Фоновая картинка в CSS --> 
+                </div>
+
+                <div class="features item3">
+                    <!-- Фоновая картинка в CSS -->
+                    <h2> Жилье </h2>
+                    <p>Рекомендуем пожить в настоящем мотеле, все как в кино! </p>
+
+                </div>
+
+                <div class="features item4"> 
+                 <!-- Фоновая картинка в CSS -->
+                    <h2> Еда </h2>
+                    <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                </div>
+
+                <div class="features item5">
+                    <!-- Фоновая картинка в CSS -->
+                    <h2> Сувениры </h2>
+                    <p>Не только китайского, но и местного производства!</p>
+                </div>
+
+                <div class="features-photo item6">
+                    <!-- Фоновая картинка в CSS --> 
+                </div>
+
+                <div class="features item7">
+                    <h2> Там есть мост дьявола </h2>
+                    <p class="dec-item"> №2 </p>
+                    <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+                </div>
+
+                <div class="features item8">
+                    <h2> Небольшая площадь </h2>
+                    <p class="dec-item"> №3 </p>
+                    <p>Все достопримечательности находятся очень близко</p>
+                </div>
+
+                <div class="features item9">
+                    <h2> Красивая дорога </h2>
+                    <p class="dec-item"> №4 </p>
+                    <p>Ехать в седону из лас-вегаса совсем не скучно!</p>
+                </div>
+
+                <div class="features item10">
+                    <h2> Мало туристов </h2>
+                    <p class="dec-item"> №5 </p>
+                    <p>Большинство едет в гранд каньон и толпится там</p>
+                </div>
+            </div>
+        
+            <div class="fill-form">
+               <h1> Заинтересовались?</h1>
+               <p> Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне </p>
+
+               <div class="search-box"> 
+                    <h1> Поиск гостиницы в седоне </h1>
+                    <form action="#" method="get">
+                        <label for="arrival"> Дата Заезда: </label>
+                        <input type="date" name="arrival" id="arrival">
+
+                        <label for="departure"> Дата Выезда: </label>
+                        <input type="date" name="departure" id="departure">
+
+                        <label for="adult-q">Взрослые:</label>
+                        <span class="minus-btn">-</span>
+                        <input type="number" id="adult-q" value="2" step="1">
+                        <span class="plus-btn">+</span>
+
+                        <label for="children-q">Дети:</label>
+                        <span class="minus-btn">-</span>
+                        <input type="number" id="children-q" value="0" step="1">
+                        <span class="plus-btn">+</span>
+
+                        <button type="submit"> Найти </button>
+                    </form>
+               </div>
+
+                <div class="background-map">
+
+                </div>
+            
+          </div>
+       </div>
+    </main>
+    
+    <footer class="main-footer">
+        <div class="container">
+            <div class="ftr-items hashtag">
+                <h2>#VISITSEDONA</h2>
+            </div>
+            
+            <div class="ftr-items scn">
+                <a class="scn-btn twr" href="#"> Twitter </a>
+                <a class="scn-btn fb" href="#"> Facebook </a>
+                <a class="scn-btn ytb" href="#"> Youtube </a>
+            </div>
+            
+            <div class="ftr-items ftr-logo">
+                <img src="http://placehold.it/150x100" alt="Logo">
+            </div>
+        </div>
+    </footer>
 
   </body>
 </html>
