@@ -8,18 +8,17 @@
   <body>
     <div class="container">
             <header class="main-header">
-                <div class="main-logo">
-                   <a href="#"><img src="img/main-logo.png" alt="Sedona"  width="138" height="70"></a>
-                </div>
-
-                <nav class="main-nav"> 
-                    <ul>
-                        <li><a href="#">Информация</a></li>
-                        <li><a href="#">Фото и Видео</a></li>
-                        <li><a href="#">Карта Штата</a></li>
-                        <li><span>Гостиницы</span></li>
-                    </ul>
-                </nav>
+            <nav class="main-nav"> 
+                <ul>
+                    <li><a href="#">Информация</a></li>
+                    <li><a href="#">Фото и Видео</a></li>
+                    <li class="main-logo"><a href="index.html">
+                    <img src="img/main-logo.png" alt="Sedona"  width="138" height="70"></a>
+                    </li>
+                    <li><a href="#">Карта Штата</a></li>
+                    <li><a href="#" class="active">Гостиницы</a></li>
+                </ul>
+            </nav>
             </header>
 
         <main>
@@ -28,26 +27,38 @@
                    <form action="#" method="get">
                       <div class="filter-blocks infrastructure">
                           <h3> Инфраструктура: </h3>
-                          <input type="checkbox" id="pool" checked>
-                          <label for="pool"> Бассейн </label>
-
-                          <input type="checkbox" id="parking" >
-                          <label for="parking"> Парковка </label>
-
-                          <input type="checkbox" id="wifi" >
-                          <label for="wifi"> Wi-Fi </label>
+                          <ul>
+                              <li>
+                              <input type="checkbox" id="pool" checked>
+                              <label for="pool"> Бассейн </label>
+                              </li>
+                              <li>
+                              <input type="checkbox" id="parking" >
+                              <label for="parking"> Парковка </label>
+                              </li>
+                              <li>
+                              <input type="checkbox" id="wifi" >
+                              <label for="wifi"> Wi-Fi </label>
+                              </li>
+                          </ul>
                       </div>
 
                       <div class="filter-blocks housing-type">
                           <h3> Тип Жилья: </h3>
-                          <input type="checkbox" id="hotel" checked>
-                          <label for="hotel"> Гостиница </label>
-
-                          <input type="checkbox" id="motel" checked>
-                          <label for="motel"> Мотель </label>
-
-                          <input type="checkbox" id="apartments" checked>
-                          <label for="apartments"> Апартаменты </label>
+                          <ul>
+                              <li>
+                              <input type="checkbox" id="hotel" checked>
+                              <label for="hotel"> Гостиница </label>
+                              </li>
+                              <li>
+                              <input type="checkbox" id="motel" checked>
+                              <label for="motel"> Мотель </label>
+                              </li>
+                              <li>
+                              <input type="checkbox" id="apartments" checked>
+                              <label for="apartments"> Апартаменты </label>
+                              </li>
+                          </ul>
                       </div>
 
                       <div class="filter-blocks range-filter">
@@ -57,9 +68,10 @@
                               <div class="min-trigger"></div>
                               <div class="max-trigger"></div>
                           </div>
+                          <button type="submit" class="flt-btn"> Показать </button>
                       </div>
 
-                      <button type="submit"> Показать </button>
+                      
                    </form>
                </div>
 
@@ -123,12 +135,11 @@
                 </div>
 
                 <div class="ftr-items scn">
-                    <a class="scn-btn twr" href="#"> Twitter</a>
-                    <a class="scn-btn fb" href="#"> Facebook </a>
-                    <a class="scn-btn ytb" href="#"> Youtube </a>
+                    <a class="scn-btn twr" href="#"></a>
+                    <a class="scn-btn fb" href="#"></a>
+                    <a class="scn-btn ytb" href="#"></a>
                 </div>
-
-                <div class="ftr-items ftr-logo">
+                <div class="ftr-items ftr-logo">Website By
                     <img src="img/footer-academy-logo.png" alt="HTML Academy">
                 </div>
             </div>
