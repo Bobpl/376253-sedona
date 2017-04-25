@@ -35,19 +35,19 @@ h2 {
 
 .main-header .main-nav {
     background-color: #ffffff;
+    max-height: 55px;
 }
 
 .main-nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
+    display: flex;
+    justify-content: space-around;
 }
 
-.main-nav li {
-    display: inline-block;
-    padding: 16px 0 16px 0;
-    vertical-align: top;
-    
+.main-nav li:not(:nth-child(3)) {
+    padding-top: 15px;
 }
 
 .main-nav a {
@@ -55,36 +55,6 @@ h2 {
     text-decoration: none;
     color: #000000;
     
-}
-
-.main-nav li:first-child {
-    margin-left: 73px;
-    margin-right: 147px;
-}
-
-
-.main-nav li:nth-child(2) {
-    margin-right: 120px;
-}
-
-
-.main-logo img {
-    position: absolute;
-    top: 0;
-    left: -30px;
-}
-
-.main-logo {
-    margin-right: 220px;
-    position: relative;
-}
-
-.main-nav li:nth-child(4) {
-    margin-right: 145px;
-}
-
-.main-nav li:last-child {
-    margin-right: 73px;
 }
 
 .promo {
@@ -130,7 +100,7 @@ h2 {
 
 
 .promo-headings .promo-element {
-    width: 1200px;
+    width: 100%;
     height: 57px;
     margin-top: 23px;
     background-image: url("../img/promo-photo-detail.png");
@@ -159,13 +129,13 @@ h2 {
 }
 
 .main-features { 
-
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .main-features .features {
-    width: 400px;
+    width: 33.33%;
     height: 256px;
-    display: inline-block;
     text-align: center;
     vertical-align: top;
 }
@@ -213,10 +183,8 @@ h2 {
 }
 
 .main-features .item2 {
-    width: 800px;
+    width: 66.66%;
     height: 256px;
-    display: inline-block;
-    vertical-align: top;
     background-image: url("../img/content-photo1.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
@@ -231,10 +199,8 @@ h2 {
 }
 
 .main-features .item6 {
-    width: 800px;
+    width: 66.66%;
     height: 256px;
-    display: inline-block;
-    vertical-align: top;
     background-image: url("../img/content-photo2.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
@@ -303,6 +269,8 @@ h2 {
 }
 
 .fill-form {
+    min-width: 768px;
+    max-width: 1200px;
     background-color: #ffffff;
     text-align: center;
 }
@@ -321,6 +289,9 @@ h2 {
 }
 
 .search-box {
+    min-width: 768px;
+    max-width: 1200px;
+    height: 86px;
     position: relative;
 }
 .search-box h2 {
@@ -335,7 +306,7 @@ h2 {
 
 .search-box form {
     width: 568px;
-    height: 395px;
+    height: 482px;
     margin: 0 auto;
     box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
     position: absolute;
@@ -409,6 +380,18 @@ form .search-box-btn {
     line-height: 26px;
     color: #ffffff;
 }
+
+
+.fill-form .background-map {
+    min-width: 768px;
+    max-width: 1200px;
+}
+
+.fill-form .background-map img {
+    min-width: 768px;
+    max-width: 1200px;
+}
+
 
 .main-footer {
 }
