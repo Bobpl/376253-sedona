@@ -3,8 +3,7 @@
    <head>
       <meta charset="utf-8">
       <title>City of Sedona</title>
-      <link rel="stylesheet" href="css/style.css">
-      <link rel="stylesheet" href="css/localfonts.css">
+      <link rel="stylesheet" href="css/style-min.css">
    </head>
    <body>
       <div class="container">
@@ -40,7 +39,7 @@
                <div class="features-parts part1">
                   <div class="features item1">
                      <span class="features-headings part1-heading">
-                     Настоящий <br> городок 
+                     Настоящий городок 
                      </span> 
                      <span class="dec-item">
                      - №1 -
@@ -82,7 +81,7 @@
                   </div>
                   <div class="features item7">
                      <span class="features-headings part3-heading">
-                     Там есть <br> мост дьявола
+                     Там есть мост дьявола
                      </span>
                      <p class="dec-item"> - №2 - </p>
                      <p class="features-description">
@@ -134,10 +133,17 @@
                            <input type="date" name="departure" id="departure" value="2017-07-04">
                         </li>
                         <li>
-                           <label for="adult-q">Взрослые:</label>
-                           <input type="number" id="adult-q" value="2" step="1">
+                           <label class="adult-q" for="adult-q">Взрослые:</label>
+                           <span class="search-box-plus-minus minus"></span>
+                           <input type="number" id="adult-q" class="q-adult" value="2" step="1">
+                           <span class="search-box-plus-minus plus"></span>
+                           
                            <label class="children-q" for="children-q">Дети:</label>
-                           <input type="number" id="children-q" value="0" step="1">
+                           <span class="search-box-plus-minus cd-minus"></span>
+                           <input type="number" id="children-q" class="q-child" value="0" step="1">
+                           <span class="search-box-plus-minus cd-plus"></span>
+
+                       
                         </li>
                      </ul>
                      <button type="submit" class="search-box-btn"> Найти </button>
@@ -162,6 +168,6 @@
             </div>
          </footer>
       </div>
-      <script src="js/script.js"> </script>
+      <script src="js/script-min.js"> </script>
    </body>
 </html>
