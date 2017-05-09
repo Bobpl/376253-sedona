@@ -5,6 +5,10 @@ var arrival = document.querySelector("#arrival");
 var departure = document.querySelector("#departure");
 var adults = document.querySelector("#adult-q");
 var children = document.querySelector("#children-q"); 
+var minus = document.querySelector(".minus");
+var plus = document.querySelector(".plus");
+var cdMinus = document.querySelector(".cd-minus");
+var cdPlus = document.querySelector(".cd-plus");
 
 searcHeading.addEventListener("click", function(event) {
     event.preventDefault();
@@ -12,11 +16,37 @@ searcHeading.addEventListener("click", function(event) {
 }) 
         
 popup.addEventListener("submit", function(event) { 
-    if(!arrival.value || !departure.value || !adults.value || !children.value) {
-    event.preventDefault;
-    console.log("Type some text"); } 
+    if (!arrival.value || !departure.value || !adults.value || !children.value) {
+        event.preventDefault();
+        console.log("Type some text"); 
+    } 
+    
     else {
-    localStorage.setItem("children", children.value);
-    localStorage.setItem("adults", adults.value);
+        localStorage.setItem("children", children.value);
+        localStorage.setItem("adults", adults.value);
+    }
+});
+
+plus.addEventListener("click", function(event) {
+    event.preventDefault();
+    adults.value ++;
+});
+
+minus.addEventListener("click", function(event) { 
+    if(adults.value > 0 ) {
+        event.preventDefault();
+        adults.value --;
+    }
+});
+
+cdPlus.addEventListener("click", function(event) {
+    event.preventDefault();
+    children.value ++;
+});
+
+cdMinus.addEventListener("click", function(event) { 
+    if(children.value > 0 ) {
+        event.preventDefault();
+        children.value --;
     }
 });
