@@ -116,6 +116,15 @@ h2 {
     color: #cacaca;
 }
 
+.page-active {
+    display: block;
+    font-size: 14px;
+    line-height: 26px;
+    display: block;
+    padding: 14px 0 17px 0;
+    color: #766357;
+}
+
 .promo {
     margin: 0 auto;    
 }
@@ -136,9 +145,7 @@ h2 {
     height: 85px;
     margin: 0 auto;
     margin-bottom: 53px;
-    background-image: url('../img/intro-welcome.png'), url('../img/intro-gorgeous.png');
-    background-repeat: no-repeat;
-    background-position: 50% 0, 50% 100%;
+    text-align: center;
 }
 
 .promo-headings .promo-sedona {
@@ -146,8 +153,6 @@ h2 {
     height: 78px;
     margin: 0 auto;
     margin-bottom: 56px;
-    background-image: url('../img/intro-sedona.png');
-    background-repeat: no-repeat;
 }
 
 .promo-headings .promo-grand-canyon {
@@ -216,10 +221,11 @@ h2 {
 }
 
 .features .features-description {
+    width: 281px;
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
-    margin: 0;
+    margin: 0 auto;
 }
 
 .main-features .dec-item {
@@ -278,11 +284,7 @@ h2 {
 
 .main-features .item2 {
     width: 66.66%;
-    background-image: url('../img/content-photo1.jpg');
-    background-repeat: no-repeat;
-    background-position: 100% 54%;
-    background-size: cover;
-    
+    height: 256px;
 }
 
 .main-features .item6 {
@@ -335,6 +337,7 @@ h2 {
     border-top: 2px solid #333;
 }
 
+
 .fill-form {
     min-width: 768px;
     max-width: 1200px;
@@ -363,6 +366,7 @@ h2 {
 }
 
 .search-box .search-box-search {
+    font-family: 'PT Sans', 'Verdana', sans-serif;
     font-size: 21px;
     font-weight: 700;
     display: block;
@@ -375,15 +379,16 @@ h2 {
     text-decoration: none;
     color: #fff;
     background: #766357;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
 }
 
 .search-box .search-box-form {
     position: absolute;
     right: 0;
     left: 0;
-    display: none;
     width: 568px;
-    margin: 0 auto;
     margin: 0 auto;
     padding-top: 55px;
     padding-bottom: 53px;
@@ -430,12 +435,7 @@ h2 {
             animation-duration: 1s;
 }
 
-.search-box ul {
-    width: 458px;
-    margin: 0 auto;
-    padding: 0;
-    list-style: none;
-}
+
 
 .search-box label {
     font-size: 14px;
@@ -447,19 +447,20 @@ h2 {
     text-align: left;
 }
 
-.search-box li {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-bottom: 30px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+.search-box-form .form-inputs {
+    width: 459px;
+    margin: 0 auto;
 }
 
-.search-box li:last-child {
-    margin-bottom: 53px;
-    position: relative;
+.form-inputs .dates {
+    padding: 0;
+    display: flex;
+    align-content: center;
+    margin-bottom: 30px;
+}
+
+.form-inputs .children-adults {
+    margin-bottom: 54px;
 }
 
 .search-box input[type='date'] {
@@ -473,6 +474,7 @@ h2 {
     padding-left: 12px;
     border: none;
     background-color: #f2f2f2;
+
 }
 
 .search-box input::-webkit-calendar-picker-indicator,
@@ -512,7 +514,7 @@ input::-webkit-search-cancel-button {
 }
 
 .search-box input[type='number'] {
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'PT Sans', 'Verdana', sans-serif;
     font-weight: 700;
     position: relative;
     width: 114px;
@@ -616,6 +618,7 @@ input::-webkit-search-cancel-button {
 }
 
 .search-box-form .search-box-btn {
+    font-family: 'PT Sans', 'Verdana', sans-serif;
     font-size: 21px;
     font-weight: 700;
     line-height: 26px;
@@ -624,8 +627,8 @@ input::-webkit-search-cancel-button {
     padding: 0;
     text-transform: uppercase;
     color: #fff;
-    border: none;
     background-color: #81b3d2;
+    border: none;
 }
 
 .search-box-form .search-box-btn:hover {
@@ -896,7 +899,7 @@ input[type='checkbox']:checked ~ label::before {
 }
 
 .range-indicator input[type='text'] {
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'PT Sans', 'Verdana', sans-serif;
     font-size: 14px;
     line-height: 21px;
     display: inline-block;
@@ -962,7 +965,7 @@ input[type='checkbox']:checked ~ label::before {
 }
 
 .main-filter-form .flt-btn {
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'PT Sans', 'Verdana' sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
