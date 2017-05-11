@@ -1118,11 +1118,9 @@ input[disabled] + label::before {
 
 .range-controls .min-trigger {
     left: 0;
-    right: 100%;
 }
 
-.range-controls .min-trigger {
-    left: 80%;
+.range-controls .max-trigger {
     right: 20%;
 }
 
