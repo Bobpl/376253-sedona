@@ -1125,7 +1125,7 @@ input[disabled] + label::before {
 }
 
 .main-filter-form .flt-btn {
-    font-family: 'PT Sans', 'Verdana' sans-serif;
+    font-family: 'PT Sans', 'Verdana', sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
