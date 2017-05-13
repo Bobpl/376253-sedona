@@ -10,6 +10,8 @@ var plus = document.querySelector(".plus");
 var cdMinus = document.querySelector(".cd-minus");
 var cdPlus = document.querySelector(".cd-plus");
 
+popup.classList.add("search-box-form-show");
+
 searcHeading.addEventListener("click", function(event) {
     event.preventDefault();
     popup.classList.toggle("search-box-form-show");
