@@ -98,9 +98,6 @@ body {
     text-align: right;
 }
 
-.main-nav li:nth-child(3) a {
-}
-
 .main-nav li:nth-child(4) {
     text-align: right;
 }
@@ -151,36 +148,17 @@ body {
     z-index: 1;
 }
 
-.promo-headings .promo-welcome {
+.promo-headings::after {
+    content: "";
     display: block;
-    margin: 0 auto;
-    margin-bottom: 11px;
-}
-
-.promo-headings .promo-gorgeous {
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 52px;
-}
-
-.promo-headings .promo-sedona {
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 56px;
-}
-
-.promo-headings .promo-grand-canyon {
-    display: block;
-    margin: auto;
-    background-repeat: no-repeat;
-}
-
-.promo-headings .promo-element {
     position: absolute;
     bottom: 0;
     width: 100%;
     height: 57px;
-    display: block;
+    background-image: url("../img/promo-photo-detail.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
 }
 
 .promo-text {
@@ -203,6 +181,14 @@ body {
     margin: 0;
     text-align: center;
     color: #333;
+}
+
+
+.promo-headings .promo-photo {
+    width: 458px;
+    height: 352px;
+    display: block;
+    margin: 0 auto;
 }
 
 .main-features .features-parts {
@@ -236,7 +222,7 @@ body {
 }
 
 .features .desc1 {
-    max-width: 70%;
+    max-width: 74%;
     min-width: 45%;
 }
 
@@ -261,8 +247,8 @@ body {
 }
 
 .features .desc6 {
-    max-width: 73.5%;
-    min-width: 73.5%;
+    max-width: 60%;
+    min-width: 40%;
 }
 
 .features .desc7 {
@@ -279,7 +265,7 @@ body {
     font-weight: 400;
     position: relative;
     display: block;
-    width: 50px;
+    width: 70px;
     margin: 0 auto;
     margin-bottom: 18px;
 }
@@ -298,7 +284,7 @@ body {
 .features .part2-2-heading::before {
     display: block;
     margin: 0 auto;
-    margin-bottom: 33px;
+    margin-bottom: 31px;
     content: '';
     background-image: url('../img/spritesheet.png');
     width: 74px;
@@ -309,7 +295,8 @@ body {
 .features .part2-3-heading::before {
     display: block;
     margin: 0 auto;
-    margin-bottom: 26px;
+    margin-top: -4px;
+    margin-bottom: 28px;
     content: '';
     background-image: url('../img/spritesheet.png');
     width: 64px;
@@ -333,7 +320,7 @@ body {
 }
 
 .features-parts .item7 {
-    padding-bottom: 62px;
+    padding-bottom: 59px;
 }
 
 .features-parts .item2 {
@@ -434,8 +421,8 @@ body {
     box-sizing: border-box;
     width: 568px;
     margin: 0 auto;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 32px;
+    padding-bottom: 32px;
     text-decoration: none;
     color: #fff;
     background: #766357;
@@ -469,6 +456,15 @@ body {
     margin: 0;
     padding: 0;
     text-align: left;
+}
+
+.search-box .date-arrival-date {
+    padding-top: 3px;
+    padding-left: 2px;
+}
+
+.search-box .date-departure-date {
+    padding-left: 2px;
 }
 
 .search-box-form .form-inputs {
@@ -818,6 +814,10 @@ input::-ms-clear {
     margin: auto;
 }
 
+.scn .ytb {
+    margin-right: 0;
+}
+
 .scn .ytb::after {
     content: "";
     display: block;
@@ -896,7 +896,7 @@ input::-ms-clear {
     background-position: 0 20%;
     background-size: 110%;
     padding-top: 14px;
-    padding-bottom: 32px;
+    padding-bottom: 30px;
 }
 
 .main-filter-form .form-container {
@@ -935,7 +935,7 @@ input::-ms-clear {
 }
 
 .filter-blocks ul li {
-    margin-bottom: 18px;
+    margin-bottom: 19px;
 }
 
 .filter-blocks li:last-child {
@@ -1131,7 +1131,7 @@ input[disabled] + label::before {
     line-height: 21px;
     display: block;
     width: 133px;
-    margin-left: 85px;
+    margin-left: 87px;
     padding-top: 5px;
     padding-bottom: 6px;
     text-transform: uppercase;
